@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse, redirect
+from django.views import View
 
 
 # Create your views here.
@@ -31,3 +32,12 @@ def login(request):
     print(request.META)  # 所有请求头的信息 {''HTTP_USER_AGENT':'asdfasdfasdf',....}
     # 	request.META 字典类型数据,所有的请求头的键都加上了一个HTTP_键名称
     return HttpResponse('ok')
+
+
+class ArticalView(View):
+    def __init__(self):
+        pass
+    def get(self,request,yesr):
+        print(yesr)
+        return HttpResponse('jj')
+

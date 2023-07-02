@@ -25,5 +25,7 @@ urlpatterns = [
     path('django4/<int:year>/', views.test2),
     re_path('django5/(\d+)/', views.test3),
     re_path('django6/', views.login),
+    re_path('django7/(\d+)/', views.ArticalView.as_view()),
+
 
 ]
