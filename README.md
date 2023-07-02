@@ -4,3 +4,5 @@
 # 切换main分支:
 
 git branch -M main
+
+pip freeze > requirements.txt 
