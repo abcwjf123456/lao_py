@@ -23,7 +23,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('django3/', views.test1),
     path('django4/<int:year>/', views.test2),
+    # 无名分组
     re_path('django5/(\d+)/', views.test3),
     re_path('django6/', views.login),
+    # 有名分组
+    re_path('django7/(?P<year>\d+)/(?P<month>\d+)/',views.test4)
 
 ]

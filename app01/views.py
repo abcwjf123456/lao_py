@@ -31,3 +31,7 @@ def login(request):
     print(request.META)  # 所有请求头的信息 {''HTTP_USER_AGENT':'asdfasdfasdf',....}
     # 	request.META 字典类型数据,所有的请求头的键都加上了一个HTTP_键名称
     return HttpResponse('ok')
+def test4(request,year,month):
+    print(year)
+    print(month)
+    return HttpResponse('ok')
