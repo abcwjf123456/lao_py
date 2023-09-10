@@ -14,8 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,re_path
+from django.urls import path, re_path, include
 from app01 import views
+
+# from group2 import views
 
 urlpatterns = [
 
@@ -27,6 +29,8 @@ urlpatterns = [
     re_path('django5/(\d+)/', views.test3),
     re_path('django6/', views.login),
     # 有名分组
-    re_path('django7/(?P<year>\d+)/(?P<month>\d+)/',views.test4)
+    re_path('django7/(?P<year>\d+)/(?P<month>\d+)/', views.test4),
+    # 老男孩2.0 django基础开发路由_orm内容代码练习
+    path('group2/', include('group2.urls')),
 
 ]
