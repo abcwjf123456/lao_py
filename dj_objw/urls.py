@@ -32,5 +32,6 @@ urlpatterns = [
     re_path('django7/(?P<year>\d+)/(?P<month>\d+)/', views.test4),
     # 老男孩2.0 django基础开发路由_orm内容代码练习
     path('group2/', include('group2.urls')),
+    path('group3/', include('group3.urls')),
 
 ]
