@@ -33,5 +33,7 @@ urlpatterns = [
     # 老男孩2.0 django基础开发路由_orm内容代码练习
     path('group2/', include('group2.urls')),
     path('group3/', include('group3.urls')),
+    path('group4/', include('group4.urls')), # redirect
+    path('group5/', include('group5.urls')), # 模板语法
 
 ]

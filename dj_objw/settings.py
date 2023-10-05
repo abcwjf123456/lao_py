@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app01',
     'group2',
+    'group3',
+    'group4',
 ]
 
 MIDDLEWARE = [
@@ -127,4 +129,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # STATICFILES_DIRS=
 # 测试分支
 # 修改bug后的分支情况
+
 
