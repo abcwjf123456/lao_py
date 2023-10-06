@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>order</title>
+{% endblock title %}
+{% block conte %}
+    <p>您好2</p>
+{% endblock conte %}
+{% block contek %}
+    {{ block.super }}
+    <p>上面是继承的</p>
+{% endblock contek %}
+{% include "od.html" %}

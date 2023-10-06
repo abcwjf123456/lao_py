@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}<title>base</title>{% endblock title %}
+</head>
+<body>
+{% block conte %}
+    <p>你好</p>
+{% endblock conte %}
+{% block contek %}
+    <p>继承base</p>
+{% endblock contek %}
+{% include "od.html" %}
+</body>
+</html>

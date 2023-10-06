@@ -1,0 +1,48 @@
+{% load my_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ name }}</h1>
+<h1>{{ age }}</h1>
+<h1>{{ sex }}</h1>
+<h1>{{ lve.0 }}</h1>
+<h1>{{ lve.1 }}</h1>
+<h1>{{ lve.1 }}</h1>
+<h1>{{ book_info.id }}</h1>
+<h1>{{ book_info.price }}</h1>
+<h1>{{ book_list.0.price }}</h1>
+<h1>{{ books|last }}</h1>
+<h1>{{ books|first }}</h1>
+<h1>{{ lve|first }}</h1>
+<h1>{{ lve|last }}</h1>
+<h1>{{ lve|length }}</h1>
+<h1>{{ book_list|first }}</h1>
+<h1>{{ books2|default:"kkkkk" }}</h1>
+<h1>{{ books.0|default:"kkkkk" }}</h1>
+<h1>{{ books.1}}</h1>
+<h1>{{ books.1|upper}}</h1>
+<h1>{{ books.1|lower}}</h1>
+<h1>{{ books.1|title}}</h1>
+<h1>{{ data|date:"Y-m-d"}}</h1>
+<h1>{{ tel|mobli}}</h1>
+{% if age > 14 %}
+ <h1>12</h1>
+{% else %}
+    <h1>15</h1>
+{% endif %}
+
+{% for foo in lve %}
+    <h1>{{ forloop.counter }}</h1>
+    <h1>{{ forloop.counter0 }}</h1>
+    <h1>{{ foo.title }}</h1>
+
+{% endfor %}
+
+
+
+</body>
+</html>
